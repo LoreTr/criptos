@@ -1,0 +1,62 @@
+@use "sass:color";
+
+
+body {
+background: #0b0f14;
+}
+
+
+.bg-black {
+background: #05070a;
+}
+
+
+.neon-text {
+color: #00ff99;
+text-shadow: 0 0 10px #00ff99;
+}
+
+
+.sidebar {
+background: #070b10;
+min-height: 100vh;
+}
+
+
+.sidebar a {
+color: #9fffdc;
+}
+
+
+.glass-card {
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.gradient-header {
+background: linear-gradient(90deg,
+#ff0080,
+#00ff99,
+#00c3ff
+);
+}
+
+
+.glow {
+box-shadow: 0 0 15px rgba(0,255,153,.8);
+}
+
+
+@each $name, $color in (primary: #00ff99, danger: #ff004c) {
+.border-glow-#{$name} {
+box-shadow: 0 0 20px $color;
+}
+}
+
+.modal-content {
+  background-color: #0b0f14; // fondo oscuro visible
+  color: #ffffff;           // texto blanco
+  border: 1px solid rgba(255,255,255,0.1);
+}

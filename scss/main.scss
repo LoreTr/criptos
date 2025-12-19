@@ -1,0 +1,10 @@
+@use "variables";
+@use "../bootstrap/scss/bootstrap" with (
+$primary: variables.$primary,
+$enable-rounded: variables.$enable-rounded,
+$enable-shadows: variables.$enable-shadows,
+$font-family-base: variables.$font-family-base
+);
+
+
+@use "components";
